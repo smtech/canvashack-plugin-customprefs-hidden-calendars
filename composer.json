@@ -1,0 +1,13 @@
+{
+    "name": "canvashack/plugin-customprefs-hidden-calendars",
+    "description": "[Requires CustomPrefs module] Hide \"hidden\" calendars",
+    "type": "canvashack-plugin",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sethbattis@stmarksschool.org"
+        }
+    ],
+    "require": {}
+}

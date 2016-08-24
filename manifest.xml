@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<canvashack>
+	<name>CustomPrefs: Hidden Calendars</name>
+	<id>customprefs-hidden-calendars</id>
+	<abstract>Hide "hidden" calendars</abstract>
+	<authors>
+		<author>
+			<name>Seth Battis</name>
+			<email>SethBattis@stmarksschool.org</email>
+		</author>
+	</authors>
+	<components>
+		<javascript>hidden-calendars.js.php</javascript>
+		<canvas>
+			<pages>
+				<include>
+					<page>
+						<type>regex</type>
+						<pattern>%/calendar%</pattern>
+					</page>
+				</include>
+			</pages>
+			<dom>
+				<bundle>
+					<event>load</event>
+					<action>hideCalendars()</action>
+					<selector>#calendar-app</selector>
+				</bundle>
+			</dom>
+		</canvas>
+	</components>
+</canvashack>
